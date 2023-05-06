@@ -1,4 +1,4 @@
-package programmers.level0;
+package programmers.level0.answer;
 import java.util.Arrays;
 
 public class arrayAverage_answer {

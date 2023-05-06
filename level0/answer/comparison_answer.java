@@ -1,4 +1,4 @@
-package programmers.level0;
+package programmers.level0.answer;
 
 public class comparison_answer {
     public static int solution(int num1, int num2){
