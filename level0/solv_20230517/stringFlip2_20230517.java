@@ -1,6 +1,6 @@
 package programmers.level0.solv_20230517;
 
-public class stringFlip_20230517 {
+public class stringFlip2_20230517 {
     public static String solution(String my_string, int[][] queries) {
         String answer = "";
         char[] arr = my_string.toCharArray();
