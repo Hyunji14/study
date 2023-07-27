@@ -24,7 +24,7 @@ public class toothbrush_20230719 {
             tree.put(enroll[i], referral[i]);
         }
         for(int i=0; i<seller.length; i++){
-                sellAmount.putIfAbsent(seller[i], new Stack<>());
+            sellAmount.putIfAbsent(seller[i], new Stack<>());
             sellAmount.get(seller[i]).add(amount[i]);
         }
 
