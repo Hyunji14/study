@@ -1,18 +1,10 @@
 const fs = require('fs');
 const filePath = process.platform === 'linux' ? '/dev/stdin' : './input.txt';
-const array = fs
-  .readFileSync(filePath)
-  .toString()
-  .trim()
-  .split('\n')
-  .map((item) =>
-    item
-      .trim()
-      .split(' ')
-      .map((item) => +item)
-  );
+const array = fs.readFileSync(filePath).toString().split('\n');
 
-solution(array);
+const num = +array.shift();
+
+solution(num);
 
 function solution(array) {
   let x = array.map((item) => item[0]).sort((a, b) => a - b);
