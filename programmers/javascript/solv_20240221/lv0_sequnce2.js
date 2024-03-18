@@ -1,5 +1,4 @@
 function solution(arr) {
-  let answer = 0;
   let oldArr = arr;
   let x = 1;
 
@@ -22,8 +21,6 @@ function solution(arr) {
     x++;
     oldArr = newArr;
   }
-
-  //   return answer;
 }
 
 console.log(solution([1, 2, 3, 100, 99, 98]));

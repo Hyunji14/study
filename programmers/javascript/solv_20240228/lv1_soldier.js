@@ -1,14 +1,25 @@
 function solution(number, limit, power) {
   let answer = 0;
-  let list = [];
+  
+  for(let i=1; i<=number; i++){
+    let count = 0;
 
-  list.map((item) => {
-    if (item <= limit) {
-      answer += item;
-    } else {
-      answer += power;
+    for(let j=1; j<=Math.sqrt(i); j++){
+        if(i%j === 0){
+            if(Math.pow(j,2) === i){
+                count+=1;
+            }else{
+                count+=2;
+            }
+        }
     }
-  });
+
+    if(count <= limit){
+        answer+= count;
+    }else{
+        answer+=power;
+    }
+  }
 
   return answer;
 }
