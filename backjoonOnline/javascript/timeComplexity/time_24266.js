@@ -4,5 +4,5 @@ let num = fs.readFileSync(filePath).toString().trim().split('\n');
 
 num = BigInt(num);
 
-console.log(typeof nu);
+console.log(`${num * num * num}`);
 console.log(3);
